@@ -1,0 +1,27 @@
+{
+  "name": "aseguramiento-final",
+  "version": "1.0.0",
+  "description": "Entrega final de Aseguramiento de la Calidad: pruebas funcionales, no funcionales, automatizacion, seguridad y metricas sobre Cnarios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:compat": "playwright test --project=chrome --project=firefox",
+    "report:open": "playwright show-report evidencias/playwright-report",
+    "evidence:security": "ts-node scripts/security/passive-security-check.ts",
+    "report:build": "ts-node scripts/report/build-report.ts",
+    "qa:all": "npm run test:compat && npm run evidence:security && npm run report:build"
+  },
+  "keywords": [],
+  "author": "Equipo QA",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.8.0",
+    "marked": "^18.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}

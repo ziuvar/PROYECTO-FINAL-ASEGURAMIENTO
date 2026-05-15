@@ -1,0 +1,378 @@
+{
+  "scannedAt": "2026-05-15T03:52:49.744Z",
+  "baseUrl": "https://www.cnarios.com",
+  "scanner": "passive-security-check.ts",
+  "note": "Revision pasiva de cabeceras HTTP y HTML inicial. No ejecuta ataques activos sobre el sitio publico.",
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "durationMs": 330,
+      "findings": [
+        {
+          "id": "SEC-01",
+          "route": "/",
+          "severity": "Media",
+          "title": "Content-Security-Policy ausente",
+          "evidence": "No se encontro la cabecera Content-Security-Policy.",
+          "recommendation": "Definir una CSP restrictiva que limite scripts, estilos, imagenes y conexiones a origenes autorizados.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-02",
+          "route": "/",
+          "severity": "Media",
+          "title": "Proteccion anti-clickjacking no declarada",
+          "evidence": "No se encontro X-Frame-Options ni frame-ancestors en CSP.",
+          "recommendation": "Agregar frame-ancestors en CSP o X-Frame-Options: DENY/SAMEORIGIN segun el uso esperado.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-03",
+          "route": "/",
+          "severity": "Baja",
+          "title": "X-Content-Type-Options ausente",
+          "evidence": "No se encontro X-Content-Type-Options: nosniff.",
+          "recommendation": "Agregar X-Content-Type-Options: nosniff para reducir riesgos de MIME sniffing.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-04",
+          "route": "/",
+          "severity": "Baja",
+          "title": "Referrer-Policy ausente",
+          "evidence": "No se encontro Referrer-Policy.",
+          "recommendation": "Agregar Referrer-Policy: strict-origin-when-cross-origin o una politica equivalente.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-05",
+          "route": "/",
+          "severity": "Informativa",
+          "title": "Multiples enlaces canonical en el HTML inicial",
+          "evidence": "Se encontraron 32 etiquetas canonical en el documento raiz.",
+          "recommendation": "Conservar una unica etiqueta canonical por ruta para evitar ambiguedad de indexacion y mejorar mantenibilidad.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-06",
+          "route": "/",
+          "severity": "Informativa",
+          "title": "Scripts de terceros detectados",
+          "evidence": "https://www.googletagmanager.com/gtag/js?id=G-YL2T77D6WZ",
+          "recommendation": "Mantener inventario de terceros, revisar SRI cuando aplique y documentar finalidad de analitica.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        }
+      ]
+    },
+    {
+      "route": "/concepts",
+      "status": 200,
+      "durationMs": 92,
+      "findings": [
+        {
+          "id": "SEC-01",
+          "route": "/concepts",
+          "severity": "Media",
+          "title": "Content-Security-Policy ausente",
+          "evidence": "No se encontro la cabecera Content-Security-Policy.",
+          "recommendation": "Definir una CSP restrictiva que limite scripts, estilos, imagenes y conexiones a origenes autorizados.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-02",
+          "route": "/concepts",
+          "severity": "Media",
+          "title": "Proteccion anti-clickjacking no declarada",
+          "evidence": "No se encontro X-Frame-Options ni frame-ancestors en CSP.",
+          "recommendation": "Agregar frame-ancestors en CSP o X-Frame-Options: DENY/SAMEORIGIN segun el uso esperado.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-03",
+          "route": "/concepts",
+          "severity": "Baja",
+          "title": "X-Content-Type-Options ausente",
+          "evidence": "No se encontro X-Content-Type-Options: nosniff.",
+          "recommendation": "Agregar X-Content-Type-Options: nosniff para reducir riesgos de MIME sniffing.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-04",
+          "route": "/concepts",
+          "severity": "Baja",
+          "title": "Referrer-Policy ausente",
+          "evidence": "No se encontro Referrer-Policy.",
+          "recommendation": "Agregar Referrer-Policy: strict-origin-when-cross-origin o una politica equivalente.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        }
+      ]
+    },
+    {
+      "route": "/concepts/iframe",
+      "status": 200,
+      "durationMs": 101,
+      "findings": [
+        {
+          "id": "SEC-01",
+          "route": "/concepts/iframe",
+          "severity": "Media",
+          "title": "Content-Security-Policy ausente",
+          "evidence": "No se encontro la cabecera Content-Security-Policy.",
+          "recommendation": "Definir una CSP restrictiva que limite scripts, estilos, imagenes y conexiones a origenes autorizados.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-02",
+          "route": "/concepts/iframe",
+          "severity": "Media",
+          "title": "Proteccion anti-clickjacking no declarada",
+          "evidence": "No se encontro X-Frame-Options ni frame-ancestors en CSP.",
+          "recommendation": "Agregar frame-ancestors en CSP o X-Frame-Options: DENY/SAMEORIGIN segun el uso esperado.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-03",
+          "route": "/concepts/iframe",
+          "severity": "Baja",
+          "title": "X-Content-Type-Options ausente",
+          "evidence": "No se encontro X-Content-Type-Options: nosniff.",
+          "recommendation": "Agregar X-Content-Type-Options: nosniff para reducir riesgos de MIME sniffing.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-04",
+          "route": "/concepts/iframe",
+          "severity": "Baja",
+          "title": "Referrer-Policy ausente",
+          "evidence": "No se encontro Referrer-Policy.",
+          "recommendation": "Agregar Referrer-Policy: strict-origin-when-cross-origin o una politica equivalente.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        }
+      ]
+    },
+    {
+      "route": "/concepts/links",
+      "status": 200,
+      "durationMs": 95,
+      "findings": [
+        {
+          "id": "SEC-01",
+          "route": "/concepts/links",
+          "severity": "Media",
+          "title": "Content-Security-Policy ausente",
+          "evidence": "No se encontro la cabecera Content-Security-Policy.",
+          "recommendation": "Definir una CSP restrictiva que limite scripts, estilos, imagenes y conexiones a origenes autorizados.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-02",
+          "route": "/concepts/links",
+          "severity": "Media",
+          "title": "Proteccion anti-clickjacking no declarada",
+          "evidence": "No se encontro X-Frame-Options ni frame-ancestors en CSP.",
+          "recommendation": "Agregar frame-ancestors en CSP o X-Frame-Options: DENY/SAMEORIGIN segun el uso esperado.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-03",
+          "route": "/concepts/links",
+          "severity": "Baja",
+          "title": "X-Content-Type-Options ausente",
+          "evidence": "No se encontro X-Content-Type-Options: nosniff.",
+          "recommendation": "Agregar X-Content-Type-Options: nosniff para reducir riesgos de MIME sniffing.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-04",
+          "route": "/concepts/links",
+          "severity": "Baja",
+          "title": "Referrer-Policy ausente",
+          "evidence": "No se encontro Referrer-Policy.",
+          "recommendation": "Agregar Referrer-Policy: strict-origin-when-cross-origin o una politica equivalente.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        }
+      ]
+    },
+    {
+      "route": "/concepts/table",
+      "status": 200,
+      "durationMs": 101,
+      "findings": [
+        {
+          "id": "SEC-01",
+          "route": "/concepts/table",
+          "severity": "Media",
+          "title": "Content-Security-Policy ausente",
+          "evidence": "No se encontro la cabecera Content-Security-Policy.",
+          "recommendation": "Definir una CSP restrictiva que limite scripts, estilos, imagenes y conexiones a origenes autorizados.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-02",
+          "route": "/concepts/table",
+          "severity": "Media",
+          "title": "Proteccion anti-clickjacking no declarada",
+          "evidence": "No se encontro X-Frame-Options ni frame-ancestors en CSP.",
+          "recommendation": "Agregar frame-ancestors en CSP o X-Frame-Options: DENY/SAMEORIGIN segun el uso esperado.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-03",
+          "route": "/concepts/table",
+          "severity": "Baja",
+          "title": "X-Content-Type-Options ausente",
+          "evidence": "No se encontro X-Content-Type-Options: nosniff.",
+          "recommendation": "Agregar X-Content-Type-Options: nosniff para reducir riesgos de MIME sniffing.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-04",
+          "route": "/concepts/table",
+          "severity": "Baja",
+          "title": "Referrer-Policy ausente",
+          "evidence": "No se encontro Referrer-Policy.",
+          "recommendation": "Agregar Referrer-Policy: strict-origin-when-cross-origin o una politica equivalente.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        }
+      ]
+    },
+    {
+      "route": "/challenges/product-listing-pagination",
+      "status": 200,
+      "durationMs": 95,
+      "findings": [
+        {
+          "id": "SEC-01",
+          "route": "/challenges/product-listing-pagination",
+          "severity": "Media",
+          "title": "Content-Security-Policy ausente",
+          "evidence": "No se encontro la cabecera Content-Security-Policy.",
+          "recommendation": "Definir una CSP restrictiva que limite scripts, estilos, imagenes y conexiones a origenes autorizados.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-02",
+          "route": "/challenges/product-listing-pagination",
+          "severity": "Media",
+          "title": "Proteccion anti-clickjacking no declarada",
+          "evidence": "No se encontro X-Frame-Options ni frame-ancestors en CSP.",
+          "recommendation": "Agregar frame-ancestors en CSP o X-Frame-Options: DENY/SAMEORIGIN segun el uso esperado.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-03",
+          "route": "/challenges/product-listing-pagination",
+          "severity": "Baja",
+          "title": "X-Content-Type-Options ausente",
+          "evidence": "No se encontro X-Content-Type-Options: nosniff.",
+          "recommendation": "Agregar X-Content-Type-Options: nosniff para reducir riesgos de MIME sniffing.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-04",
+          "route": "/challenges/product-listing-pagination",
+          "severity": "Baja",
+          "title": "Referrer-Policy ausente",
+          "evidence": "No se encontro Referrer-Policy.",
+          "recommendation": "Agregar Referrer-Policy: strict-origin-when-cross-origin o una politica equivalente.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        }
+      ]
+    },
+    {
+      "route": "/challenges/product-filtering",
+      "status": 200,
+      "durationMs": 92,
+      "findings": [
+        {
+          "id": "SEC-01",
+          "route": "/challenges/product-filtering",
+          "severity": "Media",
+          "title": "Content-Security-Policy ausente",
+          "evidence": "No se encontro la cabecera Content-Security-Policy.",
+          "recommendation": "Definir una CSP restrictiva que limite scripts, estilos, imagenes y conexiones a origenes autorizados.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-02",
+          "route": "/challenges/product-filtering",
+          "severity": "Media",
+          "title": "Proteccion anti-clickjacking no declarada",
+          "evidence": "No se encontro X-Frame-Options ni frame-ancestors en CSP.",
+          "recommendation": "Agregar frame-ancestors en CSP o X-Frame-Options: DENY/SAMEORIGIN segun el uso esperado.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-03",
+          "route": "/challenges/product-filtering",
+          "severity": "Baja",
+          "title": "X-Content-Type-Options ausente",
+          "evidence": "No se encontro X-Content-Type-Options: nosniff.",
+          "recommendation": "Agregar X-Content-Type-Options: nosniff para reducir riesgos de MIME sniffing.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-04",
+          "route": "/challenges/product-filtering",
+          "severity": "Baja",
+          "title": "Referrer-Policy ausente",
+          "evidence": "No se encontro Referrer-Policy.",
+          "recommendation": "Agregar Referrer-Policy: strict-origin-when-cross-origin o una politica equivalente.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        }
+      ]
+    },
+    {
+      "route": "/blogs",
+      "status": 200,
+      "durationMs": 121,
+      "findings": [
+        {
+          "id": "SEC-01",
+          "route": "/blogs",
+          "severity": "Media",
+          "title": "Content-Security-Policy ausente",
+          "evidence": "No se encontro la cabecera Content-Security-Policy.",
+          "recommendation": "Definir una CSP restrictiva que limite scripts, estilos, imagenes y conexiones a origenes autorizados.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-02",
+          "route": "/blogs",
+          "severity": "Media",
+          "title": "Proteccion anti-clickjacking no declarada",
+          "evidence": "No se encontro X-Frame-Options ni frame-ancestors en CSP.",
+          "recommendation": "Agregar frame-ancestors en CSP o X-Frame-Options: DENY/SAMEORIGIN segun el uso esperado.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-03",
+          "route": "/blogs",
+          "severity": "Baja",
+          "title": "X-Content-Type-Options ausente",
+          "evidence": "No se encontro X-Content-Type-Options: nosniff.",
+          "recommendation": "Agregar X-Content-Type-Options: nosniff para reducir riesgos de MIME sniffing.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        },
+        {
+          "id": "SEC-04",
+          "route": "/blogs",
+          "severity": "Baja",
+          "title": "Referrer-Policy ausente",
+          "evidence": "No se encontro Referrer-Policy.",
+          "recommendation": "Agregar Referrer-Policy: strict-origin-when-cross-origin o una politica equivalente.",
+          "owasp": "OWASP Top 10 2021 - A05 Security Misconfiguration"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "routes": 8,
+    "findings": 34,
+    "high": 0,
+    "medium": 16,
+    "low": 16,
+    "informational": 2
+  }
+}

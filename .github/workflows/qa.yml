@@ -1,0 +1,39 @@
+name: QA Cnarios
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 12 * * *'
+
+jobs:
+  automated-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chrome firefox
+      - run: npm run test:compat
+      - run: npm run evidence:security
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evidencias-qa
+          path: |
+            evidencias/playwright-report
+            evidencias/playwright-results
+            evidencias/screenshots
+            evidencias/security
+
+  sonar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}

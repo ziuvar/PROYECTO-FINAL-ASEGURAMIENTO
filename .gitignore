@@ -1,0 +1,6 @@
+node_modules/
+/test-results/
+/playwright-report/
+evidencias/playwright-results/artifacts/
+dist/
+.env
