@@ -31,9 +31,26 @@ jobs:
 
   sonar:
     runs-on: ubuntu-latest
+    env:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
     steps:
+      - name: Check SonarQube configuration
+        id: sonar-config
+        shell: bash
+        run: |
+          if [[ -n "$SONAR_TOKEN" && -n "$SONAR_HOST_URL" ]]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "SonarQube scan skipped: SONAR_TOKEN and SONAR_HOST_URL repository secrets are not configured."
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.sonar-config.outputs.enabled == 'true'
+
       - uses: SonarSource/sonarqube-scan-action@v5
+        if: steps.sonar-config.outputs.enabled == 'true'
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
