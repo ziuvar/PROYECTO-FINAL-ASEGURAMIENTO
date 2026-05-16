@@ -21,7 +21,7 @@ const routes = [
   '/blogs'
 ];
 
-export default function () {
+export default function cnariosSmoke() {
   for (const route of routes) {
     const response = http.get(`${baseUrl}${route}`);
     check(response, {

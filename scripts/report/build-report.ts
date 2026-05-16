@@ -12,7 +12,7 @@ const pdfPath = path.join(outDir, 'Informe_Final_Cnarios.pdf');
 async function main(): Promise<void> {
   await mkdir(outDir, { recursive: true });
   const markdown = await readFile(markdownPath, 'utf8');
-  const body = marked.parse(markdown, { async: false }) as string;
+  const body = marked.parse(markdown, { async: false });
   const html = `<!doctype html>
 <html lang="es">
 <head>
@@ -44,7 +44,7 @@ async function main(): Promise<void> {
 
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage();
-  await page.goto(`file://${htmlPath.replace(/\\/g, '/')}`, { waitUntil: 'load' });
+  await page.goto(`file://${htmlPath.replaceAll('\\', '/')}`, { waitUntil: 'load' });
   await page.pdf({
     path: pdfPath,
     format: 'A4',

@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Fri, 15 May 2026 03:56:18",
-	"created": "2026-05-15T03:56:18.520768610Z",
+	"@generated": "Fri, 15 May 2026 05:50:07",
+	"created": "2026-05-15T05:50:07.292388382Z",
 	"insights":[
 		{
 			"level": "Low",
@@ -90,7 +90,7 @@
 			"site": "https://www.cnarios.com",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "76"
+			"statistic": "80"
 		}
 	],
 	"site":[ 
@@ -111,9 +111,9 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "27",
-							"uri": "https://www.cnarios.com/",
-							"nodeName": "https:\/\/www.cnarios.com\/",
+							"id": "23",
+							"uri": "https://www.cnarios.com/blogs",
+							"nodeName": "https:\/\/www.cnarios.com\/blogs",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -121,7 +121,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "31",
+							"id": "39",
 							"uri": "https://www.cnarios.com/blogs/Locators",
 							"nodeName": "https:\/\/www.cnarios.com\/blogs\/Locators",
 							"method": "GET",
@@ -131,29 +131,29 @@
 							"otherinfo": ""
 						},
 						{
+							"id": "38",
+							"uri": "https://www.cnarios.com/concepts/dropdown",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/dropdown",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "32",
+							"uri": "https://www.cnarios.com/concepts/radio",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/radio",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"id": "36",
-							"uri": "https://www.cnarios.com/challenges/login-flow",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/login-flow",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "39",
-							"uri": "https://www.cnarios.com/challenges/product-filtering",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-filtering",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "47",
-							"uri": "https://www.cnarios.com/concepts/alert",
-							"nodeName": "https:\/\/www.cnarios.com\/concepts\/alert",
+							"uri": "https://www.cnarios.com/concepts/wait",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/wait",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -168,7 +168,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "42"
+					"sourceid": "60"
 				},
 				{
 					"pluginid": "10098",
@@ -181,9 +181,9 @@
 					"desc": "<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server.</p>",
 					"instances":[ 
 						{
-							"id": "28",
-							"uri": "https://www.cnarios.com/",
-							"nodeName": "https:\/\/www.cnarios.com\/",
+							"id": "43",
+							"uri": "https://www.cnarios.com",
+							"nodeName": "https:\/\/www.cnarios.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -191,9 +191,9 @@
 							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						},
 						{
-							"id": "32",
-							"uri": "https://www.cnarios.com/blogs/Locators",
-							"nodeName": "https:\/\/www.cnarios.com\/blogs\/Locators",
+							"id": "25",
+							"uri": "https://www.cnarios.com/blogs",
+							"nodeName": "https:\/\/www.cnarios.com\/blogs",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -201,9 +201,9 @@
 							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						},
 						{
-							"id": "38",
-							"uri": "https://www.cnarios.com/challenges/login-flow",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/login-flow",
+							"id": "33",
+							"uri": "https://www.cnarios.com/concepts/radio",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/radio",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -211,7 +211,7 @@
 							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						},
 						{
-							"id": "21",
+							"id": "14",
 							"uri": "https://www.cnarios.com/robots.txt",
 							"nodeName": "https:\/\/www.cnarios.com\/robots.txt",
 							"method": "GET",
@@ -238,7 +238,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?category=HTML5&subcategory=Overly%20Permissive%20CORS%20Policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "42"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10020",
@@ -251,9 +251,9 @@
 					"desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
 					"instances":[ 
 						{
-							"id": "7",
-							"uri": "https://www.cnarios.com/",
-							"nodeName": "https:\/\/www.cnarios.com\/",
+							"id": "3",
+							"uri": "https://www.cnarios.com",
+							"nodeName": "https:\/\/www.cnarios.com",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -262,6 +262,16 @@
 						},
 						{
 							"id": "0",
+							"uri": "https://www.cnarios.com/blogs",
+							"nodeName": "https:\/\/www.cnarios.com\/blogs",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "2",
 							"uri": "https://www.cnarios.com/blogs/Locators",
 							"nodeName": "https:\/\/www.cnarios.com\/blogs\/Locators",
 							"method": "GET",
@@ -271,9 +281,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "3",
-							"uri": "https://www.cnarios.com/challenges/",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/",
+							"id": "8",
+							"uri": "https://www.cnarios.com/concepts/radio",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/radio",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -281,19 +291,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "2",
-							"uri": "https://www.cnarios.com/challenges/product-filtering",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-filtering",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "5",
-							"uri": "https://www.cnarios.com/challenges/product-listing-pagination",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-listing-pagination",
+							"id": "9",
+							"uri": "https://www.cnarios.com/concepts/wait",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/wait",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -308,7 +308,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "42"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90003",
@@ -321,7 +321,7 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "88",
+							"id": "114",
 							"uri": "https://www.cnarios.com/blogs/Locators",
 							"nodeName": "https:\/\/www.cnarios.com\/blogs\/Locators",
 							"method": "GET",
@@ -331,19 +331,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "89",
-							"uri": "https://www.cnarios.com/blogs/Locators",
-							"nodeName": "https:\/\/www.cnarios.com\/blogs\/Locators",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-YL2T77D6WZ\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"id": "86",
-							"uri": "https://www.cnarios.com/challenges/login-flow",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/login-flow",
+							"id": "131",
+							"uri": "https://www.cnarios.com/challenges/",
+							"nodeName": "https:\/\/www.cnarios.com\/challenges\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -351,9 +341,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "93",
-							"uri": "https://www.cnarios.com/challenges/product-filtering",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-filtering",
+							"id": "122",
+							"uri": "https://www.cnarios.com/concepts",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -361,9 +351,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "94",
-							"uri": "https://www.cnarios.com/challenges/product-filtering",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-filtering",
+							"id": "117",
+							"uri": "https://www.cnarios.com/concepts/dropdown",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/dropdown",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap\" rel=\"stylesheet\">",
+							"otherinfo": ""
+						},
+						{
+							"id": "120",
+							"uri": "https://www.cnarios.com/concepts/dropdown",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/dropdown",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -378,7 +378,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "67"
+					"sourceid": "58"
 				},
 				{
 					"pluginid": "10017",
@@ -391,9 +391,9 @@
 					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
 					"instances":[ 
 						{
-							"id": "29",
-							"uri": "https://www.cnarios.com/",
-							"nodeName": "https:\/\/www.cnarios.com\/",
+							"id": "45",
+							"uri": "https://www.cnarios.com",
+							"nodeName": "https:\/\/www.cnarios.com",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-YL2T77D6WZ",
 							"attack": "",
@@ -401,7 +401,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "35",
+							"id": "31",
+							"uri": "https://www.cnarios.com/blogs",
+							"nodeName": "https:\/\/www.cnarios.com\/blogs",
+							"method": "GET",
+							"param": "https://www.googletagmanager.com/gtag/js?id=G-YL2T77D6WZ",
+							"attack": "",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-YL2T77D6WZ\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "50",
 							"uri": "https://www.cnarios.com/blogs/Locators",
 							"nodeName": "https:\/\/www.cnarios.com\/blogs\/Locators",
 							"method": "GET",
@@ -411,9 +421,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "40",
-							"uri": "https://www.cnarios.com/challenges/login-flow",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/login-flow",
+							"id": "48",
+							"uri": "https://www.cnarios.com/concepts/radio",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/radio",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-YL2T77D6WZ",
 							"attack": "",
@@ -421,19 +431,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "44",
-							"uri": "https://www.cnarios.com/challenges/product-filtering",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-filtering",
-							"method": "GET",
-							"param": "https://www.googletagmanager.com/gtag/js?id=G-YL2T77D6WZ",
-							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-YL2T77D6WZ\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"id": "61",
-							"uri": "https://www.cnarios.com/challenges/product-listing-pagination",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-listing-pagination",
+							"id": "51",
+							"uri": "https://www.cnarios.com/concepts/wait",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/wait",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-YL2T77D6WZ",
 							"attack": "",
@@ -448,7 +448,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "42"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90004",
@@ -461,9 +461,9 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "157",
-							"uri": "https://www.cnarios.com/blogs/html-basics",
-							"nodeName": "https:\/\/www.cnarios.com\/blogs\/html-basics",
+							"id": "196",
+							"uri": "https://www.cnarios.com/challenges",
+							"nodeName": "https:\/\/www.cnarios.com\/challenges",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
@@ -471,7 +471,27 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "140",
+							"id": "187",
+							"uri": "https://www.cnarios.com/challenges/product-listing-pagination",
+							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-listing-pagination",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "179",
+							"uri": "https://www.cnarios.com/concepts/alert",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/alert",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "191",
 							"uri": "https://www.cnarios.com/concepts/links",
 							"nodeName": "https:\/\/www.cnarios.com\/concepts\/links",
 							"method": "GET",
@@ -481,27 +501,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "148",
-							"uri": "https://www.cnarios.com/concepts/multiwindow",
-							"nodeName": "https:\/\/www.cnarios.com\/concepts\/multiwindow",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "152",
-							"uri": "https://www.cnarios.com/interview-questions",
-							"nodeName": "https:\/\/www.cnarios.com\/interview-questions",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "42",
+							"id": "171",
 							"uri": "https://www.cnarios.com/sitemap.xml",
 							"nodeName": "https:\/\/www.cnarios.com\/sitemap.xml",
 							"method": "GET",
@@ -518,7 +518,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "75"
+					"sourceid": "76"
 				},
 				{
 					"pluginid": "90004",
@@ -531,9 +531,9 @@
 					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
 					"instances":[ 
 						{
-							"id": "158",
-							"uri": "https://www.cnarios.com/blogs/html-basics",
-							"nodeName": "https:\/\/www.cnarios.com\/blogs\/html-basics",
+							"id": "197",
+							"uri": "https://www.cnarios.com/challenges",
+							"nodeName": "https:\/\/www.cnarios.com\/challenges",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
 							"attack": "",
@@ -541,7 +541,27 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "141",
+							"id": "188",
+							"uri": "https://www.cnarios.com/challenges/product-listing-pagination",
+							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-listing-pagination",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "180",
+							"uri": "https://www.cnarios.com/concepts/alert",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/alert",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "192",
 							"uri": "https://www.cnarios.com/concepts/links",
 							"nodeName": "https:\/\/www.cnarios.com\/concepts\/links",
 							"method": "GET",
@@ -551,27 +571,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "149",
-							"uri": "https://www.cnarios.com/concepts/multiwindow",
-							"nodeName": "https:\/\/www.cnarios.com\/concepts\/multiwindow",
-							"method": "GET",
-							"param": "Cross-Origin-Opener-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "153",
-							"uri": "https://www.cnarios.com/interview-questions",
-							"nodeName": "https:\/\/www.cnarios.com\/interview-questions",
-							"method": "GET",
-							"param": "Cross-Origin-Opener-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "43",
+							"id": "172",
 							"uri": "https://www.cnarios.com/sitemap.xml",
 							"nodeName": "https:\/\/www.cnarios.com\/sitemap.xml",
 							"method": "GET",
@@ -588,7 +588,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "75"
+					"sourceid": "76"
 				},
 				{
 					"pluginid": "10063",
@@ -601,9 +601,9 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "156",
-							"uri": "https://www.cnarios.com/blogs/html-basics",
-							"nodeName": "https:\/\/www.cnarios.com\/blogs\/html-basics",
+							"id": "195",
+							"uri": "https://www.cnarios.com/challenges",
+							"nodeName": "https:\/\/www.cnarios.com\/challenges",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -611,9 +611,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "160",
-							"uri": "https://www.cnarios.com/challenges/product-purchasing",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-purchasing",
+							"id": "186",
+							"uri": "https://www.cnarios.com/challenges/product-listing-pagination",
+							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-listing-pagination",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -621,7 +621,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "139",
+							"id": "178",
+							"uri": "https://www.cnarios.com/concepts/alert",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/alert",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "190",
 							"uri": "https://www.cnarios.com/concepts/links",
 							"nodeName": "https:\/\/www.cnarios.com\/concepts\/links",
 							"method": "GET",
@@ -631,19 +641,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "147",
-							"uri": "https://www.cnarios.com/concepts/multiwindow",
-							"nodeName": "https:\/\/www.cnarios.com\/concepts\/multiwindow",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "151",
-							"uri": "https://www.cnarios.com/interview-questions",
-							"nodeName": "https:\/\/www.cnarios.com\/interview-questions",
+							"id": "199",
+							"uri": "https://www.cnarios.com/concepts/slider",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/slider",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -658,7 +658,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "75"
+					"sourceid": "76"
 				},
 				{
 					"pluginid": "10096",
@@ -671,7 +671,7 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
 					"instances":[ 
 						{
-							"id": "177",
+							"id": "217",
 							"uri": "https://www.cnarios.com/assets/index-BAzefxuW.js",
 							"nodeName": "https:\/\/www.cnarios.com\/assets\/index-BAzefxuW.js",
 							"method": "GET",
@@ -701,9 +701,9 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "92",
-							"uri": "https://www.cnarios.com/blogs/Locators",
-							"nodeName": "https:\/\/www.cnarios.com\/blogs\/Locators",
+							"id": "144",
+							"uri": "https://www.cnarios.com/concepts/button",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/button",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -711,9 +711,9 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "98",
-							"uri": "https://www.cnarios.com/challenges/login-flow",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/login-flow",
+							"id": "124",
+							"uri": "https://www.cnarios.com/concepts/dropdown",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/dropdown",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -721,9 +721,9 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "95",
-							"uri": "https://www.cnarios.com/challenges/product-filtering",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-filtering",
+							"id": "140",
+							"uri": "https://www.cnarios.com/concepts/wait",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/wait",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -731,7 +731,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "24",
+							"id": "35",
 							"uri": "https://www.cnarios.com/robots.txt",
 							"nodeName": "https:\/\/www.cnarios.com\/robots.txt",
 							"method": "GET",
@@ -741,7 +741,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "25",
+							"id": "53",
 							"uri": "https://www.cnarios.com/sitemap.xml",
 							"nodeName": "https:\/\/www.cnarios.com\/sitemap.xml",
 							"method": "GET",
@@ -758,7 +758,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "67"
+					"sourceid": "66"
 				},
 				{
 					"pluginid": "10094",
@@ -771,7 +771,7 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "182",
+							"id": "222",
 							"uri": "https://www.cnarios.com/assets/index-BAzefxuW.js",
 							"nodeName": "https:\/\/www.cnarios.com\/assets\/index-BAzefxuW.js",
 							"method": "GET",
@@ -801,7 +801,7 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker.</p>",
 					"instances":[ 
 						{
-							"id": "176",
+							"id": "216",
 							"uri": "https://www.cnarios.com/assets/index-BAzefxuW.js",
 							"nodeName": "https:\/\/www.cnarios.com\/assets\/index-BAzefxuW.js",
 							"method": "GET",
@@ -811,7 +811,7 @@
 							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in likely comment: \"/*! *****************************************************************************\nCopyright (c) Microsoft Corporation.\n\nPermissi\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "175",
+							"id": "215",
 							"uri": "https://www.cnarios.com/assets/index-BAzefxuW.js",
 							"nodeName": "https:\/\/www.cnarios.com\/assets\/index-BAzefxuW.js",
 							"method": "GET",
@@ -821,7 +821,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in likely comment: \"//www.cnarios.com/blogs/${e}`;o?o.setAttribute(\"href\",l):(o=document.createElement(\"link\"),o.setAttribute(\"rel\",\"canonical\"),o.s\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "174",
+							"id": "214",
 							"uri": "https://www.cnarios.com/assets/index-BAzefxuW.js",
 							"nodeName": "https:\/\/www.cnarios.com\/assets\/index-BAzefxuW.js",
 							"method": "GET",
@@ -851,7 +851,17 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "85",
+							"id": "95",
+							"uri": "https://www.cnarios.com/",
+							"nodeName": "https:\/\/www.cnarios.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"EducationalOrganization\",\n    \"name\": \"Cnarios\",\n    \"url\": \"https://www.cnarios.com\",\n    \"logo\": \"./cnarios-logo.svg\",\n    \"description\": \"Cnarios is a free platform for aspiring automation testers and manual testers to practice real-world scenarios, explore challenges, and learn concepts hands-on.\",\n    \"sameAs\": [\n      \"https://www.linkedin.com/company/cnarios\",\n      \"https://twitter.com/cnarios\",\n      \"https://www.youtube.com/@cnarios\"\n    ],\n    \"founder\": {\n      \"@type\": \"Person\",\n      \"name\": \"END Prasad\"\n    }\n  }\n  </script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "89",
 							"uri": "https://www.cnarios.com/blogs/Locators",
 							"nodeName": "https:\/\/www.cnarios.com\/blogs\/Locators",
 							"method": "GET",
@@ -861,7 +871,7 @@
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "102",
+							"id": "88",
 							"uri": "https://www.cnarios.com/challenges/",
 							"nodeName": "https:\/\/www.cnarios.com\/challenges\/",
 							"method": "GET",
@@ -871,19 +881,9 @@
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "83",
-							"uri": "https://www.cnarios.com/challenges/login-flow",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/login-flow",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"EducationalOrganization\",\n    \"name\": \"Cnarios\",\n    \"url\": \"https://www.cnarios.com\",\n    \"logo\": \"./cnarios-logo.svg\",\n    \"description\": \"Cnarios is a free platform for aspiring automation testers and manual testers to practice real-world scenarios, explore challenges, and learn concepts hands-on.\",\n    \"sameAs\": [\n      \"https://www.linkedin.com/company/cnarios\",\n      \"https://twitter.com/cnarios\",\n      \"https://www.youtube.com/@cnarios\"\n    ],\n    \"founder\": {\n      \"@type\": \"Person\",\n      \"name\": \"END Prasad\"\n    }\n  }\n  </script>",
-							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
-						},
-						{
 							"id": "90",
-							"uri": "https://www.cnarios.com/challenges/product-filtering",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-filtering",
+							"uri": "https://www.cnarios.com/concepts/modal",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/modal",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -891,9 +891,9 @@
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "96",
-							"uri": "https://www.cnarios.com/challenges/product-listing-pagination",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-listing-pagination",
+							"id": "87",
+							"uri": "https://www.cnarios.com/concepts/shadowdom",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/shadowdom",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -908,7 +908,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "67"
+					"sourceid": "42"
 				},
 				{
 					"pluginid": "10015",
@@ -921,9 +921,9 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "26",
-							"uri": "https://www.cnarios.com/",
-							"nodeName": "https:\/\/www.cnarios.com\/",
+							"id": "22",
+							"uri": "https://www.cnarios.com/blogs",
+							"nodeName": "https:\/\/www.cnarios.com\/blogs",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -931,7 +931,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "30",
+							"id": "24",
 							"uri": "https://www.cnarios.com/blogs/Locators",
 							"nodeName": "https:\/\/www.cnarios.com\/blogs\/Locators",
 							"method": "GET",
@@ -941,9 +941,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "33",
-							"uri": "https://www.cnarios.com/challenges/login-flow",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/login-flow",
+							"id": "28",
+							"uri": "https://www.cnarios.com/concepts/wait",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/wait",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -951,7 +951,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "17",
+							"id": "5",
 							"uri": "https://www.cnarios.com/robots.txt",
 							"nodeName": "https:\/\/www.cnarios.com\/robots.txt",
 							"method": "GET",
@@ -961,7 +961,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "8",
+							"id": "10",
 							"uri": "https://www.cnarios.com/sitemap.xml",
 							"nodeName": "https:\/\/www.cnarios.com\/sitemap.xml",
 							"method": "GET",
@@ -978,7 +978,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "42"
+					"sourceid": "60"
 				},
 				{
 					"pluginid": "10050",
@@ -991,53 +991,53 @@
 					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "87",
+							"id": "104",
 							"uri": "https://www.cnarios.com/blogs/Locators",
 							"nodeName": "https:\/\/www.cnarios.com\/blogs\/Locators",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1367130",
+							"evidence": "Age: 1373960",
 							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
-							"id": "84",
-							"uri": "https://www.cnarios.com/challenges/login-flow",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/login-flow",
+							"id": "112",
+							"uri": "https://www.cnarios.com/concepts/dropdown",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/dropdown",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1367130",
+							"evidence": "Age: 1373769",
 							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
-							"id": "91",
-							"uri": "https://www.cnarios.com/challenges/product-filtering",
-							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-filtering",
+							"id": "110",
+							"uri": "https://www.cnarios.com/concepts/fileupload",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/fileupload",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1367130",
+							"evidence": "Age: 1373769",
 							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
-							"id": "22",
+							"id": "21",
 							"uri": "https://www.cnarios.com/robots.txt",
 							"nodeName": "https:\/\/www.cnarios.com\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 31236",
+							"evidence": "Age: 38066",
 							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
-							"id": "23",
+							"id": "42",
 							"uri": "https://www.cnarios.com/sitemap.xml",
 							"nodeName": "https:\/\/www.cnarios.com\/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1330891",
+							"evidence": "Age: 1337721",
 							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
 						}
 					],
@@ -1048,7 +1048,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.rfc-editor.org/rfc/rfc9110.html</p>",
 					"cweid": "525",
 					"wascid": "-1",
-					"sourceid": "67"
+					"sourceid": "58"
 				},
 				{
 					"pluginid": "90005",
@@ -1061,9 +1061,9 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "144",
-							"uri": "https://www.cnarios.com/concepts/links",
-							"nodeName": "https:\/\/www.cnarios.com\/concepts\/links",
+							"id": "183",
+							"uri": "https://www.cnarios.com/concepts/alert",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/alert",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1071,7 +1071,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "136",
+							"id": "75",
 							"uri": "https://www.cnarios.com/robots.txt",
 							"nodeName": "https:\/\/www.cnarios.com\/robots.txt",
 							"method": "GET",
@@ -1081,7 +1081,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "69",
+							"id": "175",
 							"uri": "https://www.cnarios.com/sitemap.xml",
 							"nodeName": "https:\/\/www.cnarios.com\/sitemap.xml",
 							"method": "GET",
@@ -1098,7 +1098,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "71"
+					"sourceid": "72"
 				},
 				{
 					"pluginid": "90005",
@@ -1111,9 +1111,9 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "143",
-							"uri": "https://www.cnarios.com/concepts/links",
-							"nodeName": "https:\/\/www.cnarios.com\/concepts\/links",
+							"id": "182",
+							"uri": "https://www.cnarios.com/concepts/alert",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/alert",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1121,7 +1121,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "135",
+							"id": "70",
 							"uri": "https://www.cnarios.com/robots.txt",
 							"nodeName": "https:\/\/www.cnarios.com\/robots.txt",
 							"method": "GET",
@@ -1131,7 +1131,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "66",
+							"id": "174",
 							"uri": "https://www.cnarios.com/sitemap.xml",
 							"nodeName": "https:\/\/www.cnarios.com\/sitemap.xml",
 							"method": "GET",
@@ -1148,7 +1148,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "71"
+					"sourceid": "72"
 				},
 				{
 					"pluginid": "90005",
@@ -1161,9 +1161,9 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "142",
-							"uri": "https://www.cnarios.com/concepts/links",
-							"nodeName": "https:\/\/www.cnarios.com\/concepts\/links",
+							"id": "181",
+							"uri": "https://www.cnarios.com/concepts/alert",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/alert",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1171,7 +1171,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "134",
+							"id": "69",
 							"uri": "https://www.cnarios.com/robots.txt",
 							"nodeName": "https:\/\/www.cnarios.com\/robots.txt",
 							"method": "GET",
@@ -1181,7 +1181,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "62",
+							"id": "173",
 							"uri": "https://www.cnarios.com/sitemap.xml",
 							"nodeName": "https:\/\/www.cnarios.com\/sitemap.xml",
 							"method": "GET",
@@ -1198,7 +1198,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "71"
+					"sourceid": "72"
 				},
 				{
 					"pluginid": "90005",
@@ -1211,9 +1211,9 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "145",
-							"uri": "https://www.cnarios.com/concepts/links",
-							"nodeName": "https:\/\/www.cnarios.com\/concepts\/links",
+							"id": "184",
+							"uri": "https://www.cnarios.com/concepts/alert",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/alert",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1221,7 +1221,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "137",
+							"id": "83",
 							"uri": "https://www.cnarios.com/robots.txt",
 							"nodeName": "https:\/\/www.cnarios.com\/robots.txt",
 							"method": "GET",
@@ -1231,7 +1231,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "70",
+							"id": "176",
 							"uri": "https://www.cnarios.com/sitemap.xml",
 							"nodeName": "https:\/\/www.cnarios.com\/sitemap.xml",
 							"method": "GET",
@@ -1248,7 +1248,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "71"
+					"sourceid": "72"
 				},
 				{
 					"pluginid": "10049",
@@ -1261,7 +1261,27 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users.</p>",
 					"instances":[ 
 						{
-							"id": "138",
+							"id": "185",
+							"uri": "https://www.cnarios.com/challenges/product-listing-pagination",
+							"nodeName": "https:\/\/www.cnarios.com\/challenges\/product-listing-pagination",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0",
+							"otherinfo": ""
+						},
+						{
+							"id": "177",
+							"uri": "https://www.cnarios.com/concepts/alert",
+							"nodeName": "https:\/\/www.cnarios.com\/concepts\/alert",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0",
+							"otherinfo": ""
+						},
+						{
+							"id": "189",
 							"uri": "https://www.cnarios.com/concepts/links",
 							"nodeName": "https:\/\/www.cnarios.com\/concepts\/links",
 							"method": "GET",
@@ -1271,27 +1291,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "146",
-							"uri": "https://www.cnarios.com/concepts/multiwindow",
-							"nodeName": "https:\/\/www.cnarios.com\/concepts\/multiwindow",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=0",
-							"otherinfo": ""
-						},
-						{
-							"id": "150",
-							"uri": "https://www.cnarios.com/interview-questions",
-							"nodeName": "https:\/\/www.cnarios.com\/interview-questions",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=0",
-							"otherinfo": ""
-						},
-						{
-							"id": "133",
+							"id": "65",
 							"uri": "https://www.cnarios.com/robots.txt",
 							"nodeName": "https:\/\/www.cnarios.com\/robots.txt",
 							"method": "GET",
@@ -1301,7 +1301,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "34",
+							"id": "170",
 							"uri": "https://www.cnarios.com/sitemap.xml",
 							"nodeName": "https:\/\/www.cnarios.com\/sitemap.xml",
 							"method": "GET",
@@ -1318,7 +1318,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "71"
+					"sourceid": "73"
 				}
 			]
 		}
