@@ -1,0 +1,730 @@
+{
+  "config": {
+    "configFile": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\playwright.config.ts",
+    "rootDir": "c:/Users/ziuvar/Desktop/ASEGURAMIENTO FINAL/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "c:/Users/ziuvar/Desktop/ASEGURAMIENTO FINAL/evidencias/playwright-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "c:/Users/ziuvar/Desktop/ASEGURAMIENTO FINAL/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "c:/Users/ziuvar/Desktop/ASEGURAMIENTO FINAL/evidencias/playwright-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "c:/Users/ziuvar/Desktop/ASEGURAMIENTO FINAL/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "c:/Users/ziuvar/Desktop/ASEGURAMIENTO FINAL/evidencias/playwright-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "c:/Users/ziuvar/Desktop/ASEGURAMIENTO FINAL/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "c:/Users/ziuvar/Desktop/ASEGURAMIENTO FINAL/evidencias/playwright-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "c:/Users/ziuvar/Desktop/ASEGURAMIENTO FINAL/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidencias/playwright-results/results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "evidencias/playwright-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 10,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "cnarios.automated.spec.ts",
+      "file": "cnarios.automated.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cnarios - casos automatizados principales",
+          "file": "cnarios.automated.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TCA-01 navega por conceptos y valida titulos visibles",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3259,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:44.229Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "conceptos",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.automated-Cnarios--df433-s-y-valida-titulos-visibles-chrome\\attachments\\conceptos-14d33674419cbb8390b81a5f6f08aceb0eb79bda.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e6766a12cdd1ad17517e-9b41fc1ebce74295ed67",
+              "file": "cnarios.automated.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "TCA-02 interactua con el formulario dentro del iframe",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3280,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:47.817Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "iframe",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.automated-Cnarios--8d2bf-ormulario-dentro-del-iframe-chrome\\attachments\\iframe-a9d29c0a063d2301f849be55f4445191ca39cbb9.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e6766a12cdd1ad17517e-027721f997ddd971d472",
+              "file": "cnarios.automated.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "TCA-03 abre nueva pestana desde Multi Window y conserva la pagina principal operativa",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3240,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:51.107Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "multiwindow",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.automated-Cnarios--41af9--pagina-principal-operativa-chrome\\attachments\\multiwindow-8ad5a8f59a6dfa7135923bce77c977dd6a07c679.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e6766a12cdd1ad17517e-1bbfc21e0c850f3c92a7",
+              "file": "cnarios.automated.spec.ts",
+              "line": 49,
+              "column": 7
+            },
+            {
+              "title": "TCA-04 valida avance y retroceso de paginacion en productos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2907,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:54.359Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "paginacion",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.automated-Cnarios--dcba1--de-paginacion-en-productos-chrome\\attachments\\paginacion-a002ee84b12ae268eb1ca525892e7ea917562c6d.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e6766a12cdd1ad17517e-a67e444062cff143deac",
+              "file": "cnarios.automated.spec.ts",
+              "line": 68,
+              "column": 7
+            },
+            {
+              "title": "TCA-05 filtra productos por categoria y restaura la lista",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3983,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:57.279Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "filtros",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.automated-Cnarios--182bd-tegoria-y-restaura-la-lista-chrome\\attachments\\filtros-3a84ae4d327f3769f1f0bb595fff7fdf73a6eaad.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e6766a12cdd1ad17517e-53f2489b490b6d2c8a93",
+              "file": "cnarios.automated.spec.ts",
+              "line": 90,
+              "column": 7
+            },
+            {
+              "title": "TCA-01 navega por conceptos y valida titulos visibles",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4179,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:44.220Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "conceptos",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.automated-Cnarios--df433-s-y-valida-titulos-visibles-firefox\\attachments\\conceptos-85220241608ed2efdae99d64ad451880b1308058.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e6766a12cdd1ad17517e-0939e049e42806b90921",
+              "file": "cnarios.automated.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "TCA-02 interactua con el formulario dentro del iframe",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2948,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:49.510Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "iframe",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.automated-Cnarios--8d2bf-ormulario-dentro-del-iframe-firefox\\attachments\\iframe-819863e3155e82068961ed66c521bea7f8545adf.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e6766a12cdd1ad17517e-057eb6d40ba45b0f4581",
+              "file": "cnarios.automated.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "TCA-03 abre nueva pestana desde Multi Window y conserva la pagina principal operativa",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3574,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:52.469Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "multiwindow",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.automated-Cnarios--41af9--pagina-principal-operativa-firefox\\attachments\\multiwindow-721d9e21a661df325440303ba0c723451b4941b4.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e6766a12cdd1ad17517e-114f03536b03dc7dac9a",
+              "file": "cnarios.automated.spec.ts",
+              "line": 49,
+              "column": 7
+            },
+            {
+              "title": "TCA-04 valida avance y retroceso de paginacion en productos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3338,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:56.055Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "paginacion",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.automated-Cnarios--dcba1--de-paginacion-en-productos-firefox\\attachments\\paginacion-018b68618376049629450c1312b592ef95502fef.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e6766a12cdd1ad17517e-0e9b6b45bdc9f7b7a4ac",
+              "file": "cnarios.automated.spec.ts",
+              "line": 68,
+              "column": 7
+            },
+            {
+              "title": "TCA-05 filtra productos por categoria y restaura la lista",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4056,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:59.408Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "filtros",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.automated-Cnarios--182bd-tegoria-y-restaura-la-lista-firefox\\attachments\\filtros-f90cd9b1bd08c955ecdf36217192274f696e0765.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e6766a12cdd1ad17517e-d003cc2c0d8fd1824865",
+              "file": "cnarios.automated.spec.ts",
+              "line": 90,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cnarios.nonfunctional.spec.ts",
+      "file": "cnarios.nonfunctional.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cnarios - pruebas no funcionales basicas",
+          "file": "cnarios.nonfunctional.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "RNF01 paginas criticas cargan bajo umbral de 3 segundos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8275,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:44.226Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "tiempos-carga-json",
+                          "contentType": "application/json",
+                          "body": "WwogIHsKICAgICJyb3V0ZSI6ICIvIiwKICAgICJkdXJhdGlvbk1zIjogMjM5MwogIH0sCiAgewogICAgInJvdXRlIjogIi9jb25jZXB0cyIsCiAgICAiZHVyYXRpb25NcyI6IDk1NAogIH0sCiAgewogICAgInJvdXRlIjogIi9jb25jZXB0cy9pZnJhbWUiLAogICAgImR1cmF0aW9uTXMiOiA4NzkKICB9LAogIHsKICAgICJyb3V0ZSI6ICIvY29uY2VwdHMvdGFibGUiLAogICAgImR1cmF0aW9uTXMiOiA4OTYKICB9LAogIHsKICAgICJyb3V0ZSI6ICIvY2hhbGxlbmdlcy9wcm9kdWN0LWxpc3RpbmctcGFnaW5hdGlvbiIsCiAgICAiZHVyYXRpb25NcyI6IDg3OQogIH0sCiAgewogICAgInJvdXRlIjogIi9jaGFsbGVuZ2VzL3Byb2R1Y3QtZmlsdGVyaW5nIiwKICAgICJkdXJhdGlvbk1zIjogOTMwCiAgfSwKICB7CiAgICAicm91dGUiOiAiL2Jsb2dzIiwKICAgICJkdXJhdGlvbk1zIjogODk5CiAgfQpd"
+                        },
+                        {
+                          "name": "tiempos-carga",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.nonfunctional-Cnar-a0c1d-n-bajo-umbral-de-3-segundos-chrome\\attachments\\tiempos-carga-f2a351d47eb0a4e772f1fd4eb563788f1ab2845e.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "366943339dbdad449f3c-d4c708fd2c54d4868a23",
+              "file": "cnarios.nonfunctional.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "RNF03 navegacion principal no muestra errores HTTP 5xx ni errores JS graves",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7485,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:52.834Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "estabilidad",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.nonfunctional-Cnar-6685b-TP-5xx-ni-errores-JS-graves-chrome\\attachments\\estabilidad-09752abfadcc79dbd623d297c3738516c2c98f3a.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "366943339dbdad449f3c-7c90e2534f55c22bdf11",
+              "file": "cnarios.nonfunctional.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "RNF01 paginas criticas cargan bajo umbral de 3 segundos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 9518,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:44.237Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "tiempos-carga-json",
+                          "contentType": "application/json",
+                          "body": "WwogIHsKICAgICJyb3V0ZSI6ICIvIiwKICAgICJkdXJhdGlvbk1zIjogMjIwOAogIH0sCiAgewogICAgInJvdXRlIjogIi9jb25jZXB0cyIsCiAgICAiZHVyYXRpb25NcyI6IDExNzMKICB9LAogIHsKICAgICJyb3V0ZSI6ICIvY29uY2VwdHMvaWZyYW1lIiwKICAgICJkdXJhdGlvbk1zIjogMTAwMgogIH0sCiAgewogICAgInJvdXRlIjogIi9jb25jZXB0cy90YWJsZSIsCiAgICAiZHVyYXRpb25NcyI6IDEwMDEKICB9LAogIHsKICAgICJyb3V0ZSI6ICIvY2hhbGxlbmdlcy9wcm9kdWN0LWxpc3RpbmctcGFnaW5hdGlvbiIsCiAgICAiZHVyYXRpb25NcyI6IDk5NgogIH0sCiAgewogICAgInJvdXRlIjogIi9jaGFsbGVuZ2VzL3Byb2R1Y3QtZmlsdGVyaW5nIiwKICAgICJkdXJhdGlvbk1zIjogMTE2NAogIH0sCiAgewogICAgInJvdXRlIjogIi9ibG9ncyIsCiAgICAiZHVyYXRpb25NcyI6IDEwNDAKICB9Cl0="
+                        },
+                        {
+                          "name": "tiempos-carga",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.nonfunctional-Cnar-a0c1d-n-bajo-umbral-de-3-segundos-firefox\\attachments\\tiempos-carga-b36ec1a90a9697fd9b529ed4470d5a7610934a29.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "366943339dbdad449f3c-9b9f21fe50ed14d5f4c4",
+              "file": "cnarios.nonfunctional.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "RNF03 navegacion principal no muestra errores HTTP 5xx ni errores JS graves",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8059,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-21T01:40:54.525Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "estabilidad",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ziuvar\\Desktop\\ASEGURAMIENTO FINAL\\evidencias\\playwright-results\\artifacts\\cnarios.nonfunctional-Cnar-6685b-TP-5xx-ni-errores-JS-graves-firefox\\attachments\\estabilidad-bc988e72f41f822e274aebb48449890483fdb2d2.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "366943339dbdad449f3c-1ff0fba3c6c28f17aee4",
+              "file": "cnarios.nonfunctional.spec.ts",
+              "line": 35,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-21T01:40:43.793Z",
+    "duration": 20107.728,
+    "expected": 14,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
